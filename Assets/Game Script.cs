@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TestScript : MonoBehaviour
+{
+
+    private GameObject player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Log("Hello World");
+        player = GameObject.Find("Player");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (player == null)
+            Debug.Log("Game Over");
+    }
+}
