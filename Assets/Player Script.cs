@@ -42,5 +42,9 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "platform")
             can_jump = true;
+        if (collision.gameObject.tag == "line")
+            can_jump = true;
+        if (collision.gameObject.tag == "square")
+            can_jump = true;
     }
 }
