@@ -2,42 +2,71 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class PlayerScript : MonoBehaviour
 {
-    private Rigidbody2D player;
-    Vector2 movement;
-    public float move_speed;
-    public float jump_height;
+    [SerializeField] Rigidbody2D player;
+    [SerializeField] float acceleration;
+    [SerializeField] float maxSpeed;
 
+    //smaller value means stop faster
+    [Range(0f,1f)]
+    [SerializeField] float drag;
+
+    public float jump_speed;
     private bool can_jump;
+    private float xInput;
 
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(1,-1.5f,0);
-        player = GetComponent<Rigidbody2D>();
-
-        can_jump = true;
+        //can_jump = true;
     }
     // Update is called once per frame
     void Update()
     {
-        player.velocity = new Vector2(
-            Input.GetAxisRaw("Horizontal") * move_speed,
-            player.velocity.y);
+        //manages the inputs of the player
+        GetInput();
 
-        if(Input.GetKey(KeyCode.Space) && can_jump)
+        //checks input and jumps accordingly
+        manageJump();
+    }
+    private void FixedUpdate()
+    {
+        //manages horizontal movement and changes velocity accordingly
+        playerMovement();
+    }
+    private void GetInput()
+    {
+        xInput = Input.GetAxis("Horizontal");
+    }
+    private void manageJump()
+    {
+        if (Input.GetKey(KeyCode.Space) && can_jump)
         {
-            Jump();
+            player.velocity = new Vector2(player.velocity.x, jump_speed);
+            can_jump = false;
+        }
+    }
+    private void playerMovement()
+    {
+        float increment = xInput * acceleration;
+        float newSpeed = Mathf.Clamp(player.velocity.x + increment, -maxSpeed, maxSpeed);
+
+        player.velocity = new Vector2(newSpeed,player.velocity.y);
+
+        if (Mathf.Abs(xInput) > 0)
+        {
+            float direction = Mathf.Sign(xInput) * -1;
+            transform.localScale = new Vector3(direction, 1, 1);
         }
 
+        //only slowed down when on solid ground and no inputs
+        if (can_jump && xInput == 0)
+            player.velocity *= drag;
     }
-    private void Jump()
-    {
-        player.velocity = new Vector2(player.velocity.x, jump_height);
-        can_jump = false;
-    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "platform")
