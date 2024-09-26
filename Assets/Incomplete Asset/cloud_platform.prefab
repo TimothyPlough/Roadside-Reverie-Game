@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 288126499024564579}
   - component: {fileID: 4950601283220300409}
   - component: {fileID: 4646878845621850549}
-  - component: {fileID: 9208861151659697223}
   m_Layer: 0
   m_Name: cloud_platform
   m_TagString: platform
@@ -145,24 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disappearenceTimer: 5
---- !u!95 &9208861151659697223
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804042311946545314}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bcb2f46c956fb1a408c207b37b275610, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  anim: {fileID: 0}

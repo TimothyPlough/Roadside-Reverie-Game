@@ -8,39 +8,36 @@ public class cloud_behaviour : MonoBehaviour
     private bool steppedOn;
     [SerializeField] float disappearenceTimer;
     private float disTime;
-    private Animator animator;
-    private string currentState;
-    const string IDLE = "idle";
-    const string DISAPPEAR = "disappear";
+    [SerializeField] Animator anim;
 
     void Start()
     {
-        steppedOn = false;                  //keeps track of when the player has jumped off the cloud
         disTime = disappearenceTimer;       //keeps track of the original time
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        ChangeAnimationState(IDLE);
-
-        //after player steps off the cloud the timer begins to countdown
-        if (steppedOn)
-        {
-            disappearenceTimer -= Time.deltaTime;
-            //play animation?
-            ChangeAnimationState(DISAPPEAR);
-        }
-        //when timer reaches zero the cloud is 'disabled' (able to be used again)
-        if (disappearenceTimer <= 0)
-            timerEnded();
+        manageState();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         //tracks when the player has stepped on and off the cloud
         steppedOn = true;
+    }
+
+    private void manageState()
+    {
+        //after player steps off the cloud the timer begins to countdown
+        if (steppedOn)
+        {
+            disappearenceTimer -= Time.deltaTime;
+            anim.SetBool("disappear", true);
+        }
+        //when timer reaches zero the cloud is 'disabled' (able to be used again)
+        if (disappearenceTimer <= 0)
+            timerEnded();
     }
 
     //disables the cloud
@@ -51,14 +48,7 @@ public class cloud_behaviour : MonoBehaviour
         this.GetComponent<Renderer>().enabled = false;
         disappearenceTimer = disTime;
         steppedOn = false;
-    }
-
-    void ChangeAnimationState(string newState)
-    {
-        if (currentState == newState) return;
-
-        animator.Play(newState);
-        currentState = newState;
+        anim.SetBool("disappear", false);
     }
 
 

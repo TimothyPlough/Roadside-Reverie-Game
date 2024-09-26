@@ -18,11 +18,13 @@ public class PlayerScript : MonoBehaviour
     private bool can_jump;
     private float xInput;
 
+    [SerializeField] Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        //can_jump = true;
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +33,9 @@ public class PlayerScript : MonoBehaviour
 
         //checks input and jumps accordingly
         manageJump();
+
+        //calls the correct animation
+        manageAnimation();
     }
     private void FixedUpdate()
     {
@@ -65,6 +70,19 @@ public class PlayerScript : MonoBehaviour
         //only slowed down when on solid ground and no inputs
         if (can_jump && xInput == 0)
             player.velocity *= drag;
+    }
+
+    //manages animation conditions and values
+    private void manageAnimation()
+    {
+        //if moving and on solid groud
+        if (xInput != 0 && can_jump)
+        {
+            anim.SetBool("run", true);
+        }
+        else anim.SetBool("run", false);
+        //falling animation if in air
+        //idle animation
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

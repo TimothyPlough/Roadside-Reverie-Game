@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\player script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\cloud_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\cloud_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\game script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\game script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\death_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\death_script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\cloud_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\cloud_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +30,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "cloud_behaviour.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\cloud_behaviour.cs",
               "RelativeDocumentMoniker": "Assets\\cloud_behaviour.cs",
               "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\cloud_behaviour.cs",
               "RelativeToolTip": "Assets\\cloud_behaviour.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAiwD0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T21:23:20.178Z"
+              "WhenOpened": "2024-09-19T21:23:20.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Game Script.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Game Script.cs",
               "RelativeDocumentMoniker": "Assets\\Game Script.cs",
@@ -50,11 +51,12 @@
               "RelativeToolTip": "Assets\\Game Script.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T19:35:42.347Z"
+              "WhenOpened": "2024-09-13T19:35:42.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Death_script.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Death_script.cs",
               "RelativeDocumentMoniker": "Assets\\Death_script.cs",
@@ -62,7 +64,8 @@
               "RelativeToolTip": "Assets\\Death_script.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T19:29:02.221Z"
+              "WhenOpened": "2024-09-13T19:29:02.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -72,7 +75,7 @@
               "RelativeDocumentMoniker": "Assets\\Player Script.cs",
               "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Player Script.cs",
               "RelativeToolTip": "Assets\\Player Script.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T19:15:39.774Z",
               "EditorCaption": ""
