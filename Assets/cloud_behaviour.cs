@@ -8,11 +8,17 @@ public class cloud_behaviour : MonoBehaviour
     private bool steppedOn;
     [SerializeField] float disappearenceTimer;
     private float disTime;
+    private bool hidden;
+
+    [SerializeField] float returnTimer;
+    private float returnTime;
+
     [SerializeField] Animator anim;
 
     void Start()
     {
         disTime = disappearenceTimer;       //keeps track of the original time
+        returnTime = returnTimer;
     }
 
     // Update is called once per frame
@@ -37,18 +43,34 @@ public class cloud_behaviour : MonoBehaviour
         }
         //when timer reaches zero the cloud is 'disabled' (able to be used again)
         if (disappearenceTimer <= 0)
-            timerEnded();
+            disappear();
+
+        if(hidden)
+        {
+            returnTimer -= Time.deltaTime;
+        }
+        if (returnTimer <= 0)
+            reappear();
     }
 
     //disables the cloud
-    void timerEnded()
+    private void disappear()
     {
-        //play animation?
         this.GetComponent<BoxCollider2D>().enabled = false;
         this.GetComponent<Renderer>().enabled = false;
         disappearenceTimer = disTime;
         steppedOn = false;
         anim.SetBool("disappear", false);
+        hidden = true;
+    }
+
+    private void reappear()
+    {
+        this.GetComponent<BoxCollider2D>().enabled = true;
+        this.GetComponent<Renderer>().enabled = true;
+        anim.SetBool("disappear", false);
+        hidden = false;
+        returnTimer = returnTime;
     }
 
 

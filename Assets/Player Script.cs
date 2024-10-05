@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.XR;
 
 public class PlayerScript : MonoBehaviour
 {
+    [SerializeField] BoxCollider2D playerCollider;
     [SerializeField] Rigidbody2D player;
     [SerializeField] float acceleration;
     [SerializeField] float maxSpeed;
@@ -17,6 +19,12 @@ public class PlayerScript : MonoBehaviour
     public float jump_speed;
     private bool can_jump;
     private float xInput;
+    private bool isStun;
+    [SerializeField] float knockback;
+    [SerializeField] float stunTime;
+    private float stunCount;
+
+    private GameObject currentPlatform;
 
     [SerializeField] Animator anim;
 
@@ -36,6 +44,9 @@ public class PlayerScript : MonoBehaviour
 
         //calls the correct animation
         manageAnimation();
+
+        //regulates when the player is stunned
+        checkStun();
     }
     private void FixedUpdate()
     {
@@ -44,7 +55,16 @@ public class PlayerScript : MonoBehaviour
     }
     private void GetInput()
     {
+        if(!isStun)
         xInput = Input.GetAxis("Horizontal");
+
+        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if(currentPlatform != null)
+            {
+                StartCoroutine(DisableCollision());
+            }
+        }
     }
     private void manageJump()
     {
@@ -61,6 +81,7 @@ public class PlayerScript : MonoBehaviour
 
         player.velocity = new Vector2(newSpeed,player.velocity.y);
 
+        //change sprite direction
         if (Mathf.Abs(xInput) > 0)
         {
             float direction = Mathf.Sign(xInput) * -1;
@@ -70,6 +91,27 @@ public class PlayerScript : MonoBehaviour
         //only slowed down when on solid ground and no inputs
         if (can_jump && xInput == 0)
             player.velocity *= drag;
+    }
+
+    private void stun() //*reminder* missing stun animation
+    {
+        player.velocity = new Vector2(knockback, player.velocity.y);
+        xInput = 0;
+        isStun = true;
+        stunCount = stunTime;
+    }
+
+    private void checkStun()
+    {
+        if (isStun && stunCount > 0)
+        {
+            stunCount -= Time.deltaTime;
+            Debug.Log("Stun time left: " + stunCount);
+        }
+        else
+        {
+            isStun = false;
+        }
     }
 
     //manages animation conditions and values
@@ -83,15 +125,36 @@ public class PlayerScript : MonoBehaviour
         else anim.SetBool("run", false);
         //falling animation if in air
         //idle animation
+        //stun animation
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "platform")
+        {
             can_jump = true;
+            currentPlatform = collision.gameObject;
+
+        }
         if (collision.gameObject.tag == "line")
             can_jump = true;
         if (collision.gameObject.tag == "square")
             can_jump = true;
+        if (collision.gameObject.tag == "obstacle")
+            stun();
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        currentPlatform = null;
+    }
+
+    private IEnumerator DisableCollision()
+    {
+        BoxCollider2D platformCollider = currentPlatform.GetComponent<BoxCollider2D>();
+
+        Physics2D.IgnoreCollision(playerCollider, platformCollider);
+        yield return new WaitForSeconds(1f);
+        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }
