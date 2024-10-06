@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] float drag;
 
     public float jump_speed;
+    public float playerDownY = 0.1f;
     private bool can_jump;
     private float xInput;
     private bool isStun;
@@ -90,7 +91,16 @@ public class PlayerScript : MonoBehaviour
 
         //only slowed down when on solid ground and no inputs
         if (can_jump && xInput == 0)
-            player.velocity *= drag;
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                player.position = new Vector2(player.position.x, player.position.y - playerDownY);
+                can_jump = false;
+            }
+            else
+            {
+                player.velocity *= drag;
+            }
+            
     }
 
     private void stun() //*reminder* missing stun animation
