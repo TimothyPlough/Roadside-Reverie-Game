@@ -16,6 +16,7 @@ public class PlayerScript : MonoBehaviour
     [Range(0f,1f)]
     [SerializeField] float drag;
 
+    [SerializeField] BoxCollider2D platformCheck;
     public float jump_speed;
     public float playerDownY = 0.1f;
     private bool can_jump;
@@ -140,21 +141,26 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "platform")
-        {
-            can_jump = true;
-            currentPlatform = collision.gameObject;
+        Vector3 contactPoint = collision.contacts[0].point;
+        Vector3 center = playerCollider.bounds.center;
 
+        if (contactPoint.y < center.y)
+        {
+            if (collision.gameObject.tag == "platform")
+            {
+                can_jump = true;
+                currentPlatform = collision.gameObject;
+            }
+            if (collision.gameObject.tag == "line")
+                can_jump = true;
+            if (collision.gameObject.tag == "square")
+                can_jump = true;
         }
-        if (collision.gameObject.tag == "line")
-            can_jump = true;
-        if (collision.gameObject.tag == "square")
-            can_jump = true;
         if (collision.gameObject.tag == "obstacle")
             stun();
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D platformCheck)
     {
         currentPlatform = null;
     }
