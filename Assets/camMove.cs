@@ -5,6 +5,8 @@ using UnityEngine;
 public class camMove : MonoBehaviour
 {
     public GameObject camEnd;
+    public GameObject yMaxPos;
+    public GameObject yMaxNeg;
     public GameObject player;
     public bool reverse = false;
     public float camSpeed = 0.003f;
@@ -14,7 +16,7 @@ public class camMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (camEnd != null)
+        if (camEnd != null && yMaxPos != null && yMaxNeg != null && player != null)
         {
             float playPos = player.transform.position.y; //makes camera match player y
 
@@ -26,7 +28,10 @@ public class camMove : MonoBehaviour
                 if (endPos.x < transform.position.x) //change x pos of camera to right
                 {
                     transform.position = new Vector3(transform.position.x + camSpeed, transform.position.y, zPos);
-                    transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    if (transform.position.y < yMaxPos.transform.position.y && transform.position.y > yMaxNeg.transform.position.y)
+                    {
+                        transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    }
                 }
             }
             else
@@ -34,7 +39,10 @@ public class camMove : MonoBehaviour
                 if(endPos.x < transform.position.x) //change x pos of camera to left
                 {
                     transform.position = new Vector3(transform.position.x - camSpeed, transform.position.y, zPos);
-                    transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    if(transform.position.y < yMaxPos.transform.position.y)
+                    { 
+                        transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    }
                 }
             }
         }

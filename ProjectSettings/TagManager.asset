@@ -46,10 +46,10 @@ TagManager:
   - name: Background
     uniqueID: 3570983913
     locked: 0
-  - name: Platform
+  - name: Player
     uniqueID: 411368199
     locked: 0
-  - name: Player
+  - name: Platform
     uniqueID: 2101514623
     locked: 0
   - name: UI
