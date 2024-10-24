@@ -40,20 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3570983913
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 411368199
+  - name: Background
+    uniqueID: 3570983913
+    locked: 0
+  - name: Platforms
+    uniqueID: 2101514623
     locked: 0
   - name: Obstacles
     uniqueID: 2253069749
     locked: 0
-  - name: Platforms
-    uniqueID: 2101514623
+  - name: Player
+    uniqueID: 411368199
     locked: 0
   - name: UI
     uniqueID: 345667837
