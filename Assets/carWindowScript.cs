@@ -6,7 +6,7 @@ using UnityEngine;
 public class carWindowScript : MonoBehaviour
 {
     public GameObject cam;
-    public int initOffset = -3;
+    public int initOffset = 0;
     public float timeMax = 20f;
     public float timeMin = 15f;
     public bool reverse = false;

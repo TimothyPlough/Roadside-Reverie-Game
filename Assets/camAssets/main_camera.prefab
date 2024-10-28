@@ -111,6 +111,8 @@ MonoBehaviour:
   cloud2: {fileID: 1681378018256815590, guid: aaaf00f6cf1483f41ad11f7260890798, type: 3}
   cloud3: {fileID: 3233891559071544963, guid: 13fc49d75c0461e42a85764a678f22fc, type: 3}
   cloud4: {fileID: 4676963474895132067, guid: d9cc5733a0f295a4bb204818f5bb3b40, type: 3}
+  cloud5: {fileID: 369141113358295004, guid: e1694df69864aa74b845fb69f510b5be, type: 3}
+  cloud6: {fileID: 4089533645958320498, guid: 0e0a3f7d43488354e9466cf42e1baedb, type: 3}
   cloudAmount: 10
 --- !u!114 &6169871982683726108
 MonoBehaviour:
@@ -119,18 +121,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3972391056765471941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eaa570fb6d2ee904faf110e654b7c896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camEnd: {fileID: 0}
-  yMaxPos: {fileID: 0}
-  yMaxNeg: {fileID: 0}
   player: {fileID: 0}
   reverse: 0
   camSpeed: 0.003
-  camSpeedY: 0.1
-  offset: 0
-  yPos: 0
+  camSpeedY: 2
+  offset: 2
   zPos: -10
