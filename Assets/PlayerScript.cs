@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] BoxCollider2D platformCheck;
     public float jump_speed;
     public float playerDownY = 0.1f;
-    private bool can_jump;
+    public bool can_jump;
     private float xInput;
     private bool isStun;
     [SerializeField] float knockback;
@@ -44,9 +44,6 @@ public class PlayerScript : MonoBehaviour
         //checks input and jumps accordingly
         manageJump();
 
-        //calls the correct animation
-        manageAnimation();
-
         //regulates when the player is stunned
         checkStun();
     }
@@ -55,12 +52,15 @@ public class PlayerScript : MonoBehaviour
     {
         //manages horizontal movement and changes velocity accordingly
         playerMovement();
+
+        //calls the correct animation
+        manageAnimation();
     }
 
     private void GetInput()
     {
         if(!isStun)
-        xInput = Input.GetAxis("Horizontal");
+            xInput = Input.GetAxis("Horizontal");
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -82,6 +82,7 @@ public class PlayerScript : MonoBehaviour
 
     private void playerMovement()
     {
+
         float increment = xInput * acceleration;
         float newSpeed = Mathf.Clamp(player.velocity.x + increment, -maxSpeed, maxSpeed);
 
@@ -108,7 +109,7 @@ public class PlayerScript : MonoBehaviour
             
     }
 
-    private void stun() //*reminder* missing stun animation
+    private void Stun()
     {
         player.velocity = new Vector2(knockback, player.velocity.y);
         xInput = 0;
@@ -132,15 +133,18 @@ public class PlayerScript : MonoBehaviour
     //manages animation conditions and values
     private void manageAnimation()
     {
+
         //if moving and on solid groud
-        if (xInput != 0 && can_jump)
-        {
+        if (xInput != 0) 
             anim.SetBool("PlayerRun", true);
-        }
-        else anim.SetBool("PlayerRun", false);
+        else  
+            anim.SetBool("PlayerRun", false);
+
         //falling animation if in air
-        //idle animation
+        anim.SetBool("InAir", !can_jump);
+
         //stun animation
+        anim.SetBool("Stunned", isStun);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -161,7 +165,7 @@ public class PlayerScript : MonoBehaviour
                 can_jump = true;
         }
         if (collision.gameObject.tag == "obstacle")
-            stun();
+            Stun();
     }
 
     private void OnCollisionExit2D(Collision2D platformCheck)

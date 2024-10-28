@@ -12,21 +12,20 @@ public class TestScript : MonoBehaviour
     [SerializeField] GameObject cloud2;
     [SerializeField] GameObject cloud3;
     [SerializeField] GameObject cloud4;
+    [SerializeField] GameObject cloud5;
+    [SerializeField] GameObject cloud6;
 
     [SerializeField] int cloudAmount;
 
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.Find("Player");
         generateClouds();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (player == null)
-            //Debug.Log("Game Over");
     }
 
     private void generateClouds()
@@ -35,7 +34,7 @@ public class TestScript : MonoBehaviour
 
         for (int i = 0; i < cloudAmount; i++)
         {
-            int cloudType = Random.Range(1, 4);
+            int cloudType = Random.Range(1, 6);
 
             Vector3 newPos = new Vector3(
                 Random.Range(Xboundry, 0),
@@ -54,13 +53,18 @@ public class TestScript : MonoBehaviour
                 case 3:
                     e = Instantiate(cloud3) as GameObject;
                     break;
-                default:
+                case 4:
                     e = Instantiate(cloud4) as GameObject;
+                    break;
+                case 5:
+                    e = Instantiate(cloud5) as GameObject;
+                    break;
+                default:
+                    e = Instantiate(cloud6) as GameObject;
                     break;
             }
             
             e.transform.position = newPos;
-            Debug.Log("Cloud Created");
         }
     }
 }
