@@ -175,10 +175,12 @@ public class PlayerScript : MonoBehaviour
 
     private IEnumerator DisableCollision()
     {
-        BoxCollider2D platformCollider = currentPlatform.GetComponent<BoxCollider2D>();
+        //BoxCollider2D platformCollider = currentPlatform.GetComponent<BoxCollider2D>();
 
-        Physics2D.IgnoreCollision(playerCollider, platformCollider);
-        yield return new WaitForSeconds(1f);
-        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
+        //Physics2D.IgnoreCollision(playerCollider, platformCollider);
+        playerCollider.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        playerCollider.enabled = true;
+        //Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }
