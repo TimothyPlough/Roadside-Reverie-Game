@@ -8,14 +8,26 @@ public class LevelSelct : MonoBehaviour
 
     public void playDay()
     {
-        SceneManager.LoadScene("SampleScene");
+        storeValue.value = 0;
+        SceneManager.LoadScene("infiniteRunnerScene");
+    }
+
+    public void playMidday()
+    {
+        storeValue.value = 1;
+        SceneManager.LoadScene("infiniteRunnerScene");
+    }
+
+    public void playEvening()
+    {
+        storeValue.value = 2;
+        SceneManager.LoadScene("infiniteRunnerScene");
     }
 
     public void playNight()
     {
-        //load night scene
-        //SceneManager.LoadScene("night");
-        Debug.Log("Night selected");
+        storeValue.value = 3;
+        SceneManager.LoadScene("infiniteRunnerScene");
     }
 
 }

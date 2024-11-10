@@ -46,13 +46,13 @@ TagManager:
   - name: Background
     uniqueID: 3570983913
     locked: 0
-  - name: Platforms
+  - name: Player
     uniqueID: 2101514623
     locked: 0
   - name: Obstacles
     uniqueID: 2253069749
     locked: 0
-  - name: Player
+  - name: Platforms
     uniqueID: 411368199
     locked: 0
   - name: Foreground

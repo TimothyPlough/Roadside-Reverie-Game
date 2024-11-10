@@ -4333,6 +4333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: carWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 7378225011277136415, guid: 1e6a8a9b0de2f2844a41debeb95e279b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8136665263682767498, guid: 1e6a8a9b0de2f2844a41debeb95e279b, type: 3}
       propertyPath: cam
       value: 

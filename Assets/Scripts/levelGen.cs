@@ -9,7 +9,7 @@ public class levelGen : MonoBehaviour
     public Transform startingPart;
     public List<Transform> levelPartList;
     public int startingAmount = 5;
-    public const float playerDistanceSpawn = 200f;
+    public const float playerDistanceSpawn = 50f;
 
     private Vector3 endPointPos;
 
