@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_speed: 0.05
   offset: 0
-  bird: {fileID: 0}
+  bird: {fileID: 1296242974318340108}
 --- !u!1 &1997555496251093260
 GameObject:
   m_ObjectHideFlags: 0

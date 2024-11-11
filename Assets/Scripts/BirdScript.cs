@@ -8,11 +8,14 @@ public class BirdScript : MonoBehaviour
     public float move_speed;
     public float offset;
     [SerializeField] GameObject bird;
+    GameObject pauseScreen;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pauseScreen = GameObject.Find("Menus");
     }
 
     // Update is called once per frame
@@ -20,7 +23,8 @@ public class BirdScript : MonoBehaviour
     {
         pos = Camera.main.WorldToViewportPoint(transform.position);
 
-        move();
+        if(!pauseScreen.GetComponent<PauseMenu>().GameIsPause)
+            move();
 
         checkPos();
     }

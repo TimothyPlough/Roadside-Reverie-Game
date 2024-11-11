@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CamMove : MonoBehaviour
 {
     public GameObject camEnd;
     public GameObject player;
+
+    public GameObject pauseScreen;   
 
     public bool reverse = false;
 
@@ -19,12 +22,14 @@ public class CamMove : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(transform.position.x, player.transform.position.y + offset, zPos);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (camEnd != null && player != null)
+
+        if (camEnd != null && player != null && !pauseScreen.GetComponent<PauseMenu>().GameIsPause)
         {
             float playPos = player.transform.position.y; //makes camera match player y
 

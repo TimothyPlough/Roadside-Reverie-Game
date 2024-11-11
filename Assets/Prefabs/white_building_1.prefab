@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 197128514371941003}
   - component: {fileID: 5127856038938630030}
   - component: {fileID: 8944630134489561490}
+  - component: {fileID: 903921303969097277}
   m_Layer: 0
   m_Name: large_balcony
   m_TagString: platform
@@ -168,7 +169,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.46}
   m_SpriteTilingProperty:
@@ -183,6 +184,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5, y: 0.2}
   m_EdgeRadius: 0
+--- !u!251 &903921303969097277
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531254129558091562}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &4505938370265172029
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +214,7 @@ GameObject:
   - component: {fileID: 2675204734799912636}
   - component: {fileID: 3728189524281434740}
   - component: {fileID: 4521624765341049950}
+  - component: {fileID: 3999866106659600125}
   m_Layer: 0
   m_Name: white_building_1
   m_TagString: platform
@@ -298,7 +319,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 4.8}
   m_SpriteTilingProperty:
@@ -313,6 +334,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.5}
   m_EdgeRadius: 0
+--- !u!251 &3999866106659600125
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505938370265172029}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &6467458322947093445
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +815,7 @@ GameObject:
   - component: {fileID: 3165702820626117815}
   - component: {fileID: 6879482839911572160}
   - component: {fileID: 4778087785034400756}
+  - component: {fileID: 4652155499153715117}
   m_Layer: 0
   m_Name: small_balcony
   m_TagString: platform
@@ -879,7 +920,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.46}
   m_SpriteTilingProperty:
@@ -894,3 +935,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.65, y: 0.2}
   m_EdgeRadius: 0
+--- !u!251 &4652155499153715117
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993279683857702665}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
