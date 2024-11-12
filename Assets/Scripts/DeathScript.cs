@@ -1,23 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collision.gameObject == player)
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
     }
 }

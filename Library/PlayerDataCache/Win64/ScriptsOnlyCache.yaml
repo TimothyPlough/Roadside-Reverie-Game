@@ -54,8 +54,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -173,33 +175,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 16754}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 17486}
     - Class: 114
-      Script: {instanceID: 2372}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 18904}
     - Class: 114
-      Script: {instanceID: 3790}
+      Script: {instanceID: 19928}
     - Class: 114
-      Script: {instanceID: 4814}
+      Script: {instanceID: 20250}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 21168}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 21874}
     - Class: 114
-      Script: {instanceID: 6974}
+      Script: {instanceID: 22090}
     - Class: 114
-      Script: {instanceID: 7380}
+      Script: {instanceID: 22496}
     - Class: 114
-      Script: {instanceID: 7772}
+      Script: {instanceID: 22888}
     - Class: 114
-      Script: {instanceID: 9292}
+      Script: {instanceID: 24406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -246,43 +248,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 16658}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 16754}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 18646}
     - Class: 114
-      Script: {instanceID: 4154}
+      Script: {instanceID: 19268}
     - Class: 114
-      Script: {instanceID: 4188}
+      Script: {instanceID: 19302}
     - Class: 114
-      Script: {instanceID: 4502}
+      Script: {instanceID: 19616}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 19718}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 19854}
     - Class: 114
-      Script: {instanceID: 5962}
+      Script: {instanceID: 21076}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 21168}
     - Class: 114
-      Script: {instanceID: 6974}
+      Script: {instanceID: 21874}
     - Class: 114
-      Script: {instanceID: 7380}
+      Script: {instanceID: 22090}
     - Class: 114
-      Script: {instanceID: 8082}
+      Script: {instanceID: 22496}
     - Class: 114
-      Script: {instanceID: 8152}
+      Script: {instanceID: 23198}
     - Class: 114
-      Script: {instanceID: 8286}
+      Script: {instanceID: 23268}
     - Class: 114
-      Script: {instanceID: 8644}
+      Script: {instanceID: 23758}
     - Class: 114
-      Script: {instanceID: 9006}
+      Script: {instanceID: 24120}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -308,10 +310,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 540882762544409cc4530e60db00e951
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
+      Hash: 35e5973ac63bec2e1cef8a58a62d8c03
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: changeBackground
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -998,6 +1000,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1172,7 +1180,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: d60fd7bd353b98ae828f727b1ddaed68
+      Hash: dc6cd00b23188fd4c7079d1d08142800
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DeathScript
@@ -1206,12 +1214,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 35e5973ac63bec2e1cef8a58a62d8c03
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: changeBackground
   - hash:
       serializedVersion: 2
       Hash: a89b0448af4e1cd103a77f9fec0a961f
@@ -1396,5 +1398,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/infiniteRunnerScene.unity
-  playerPath: C:/Users/daddy/Documents/Roadside Reverie/Builds/build_4/Roadside Reverie
-    Game.exe
+  playerPath: D:/Download-Removeable/Roadside_Game/Roadside Reverie.exe
