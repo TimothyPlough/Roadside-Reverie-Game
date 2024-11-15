@@ -44,8 +44,8 @@ public class carWindowScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("time: " + timer);
-        Debug.Log("offset: " + offset);
+        //Debug.Log("time: " + timer);
+        //Debug.Log("offset: " + offset);
 
         timer = timer - Time.deltaTime;
 

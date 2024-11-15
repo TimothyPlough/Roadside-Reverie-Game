@@ -9,6 +9,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.66F56946" = "Death"
+	"OpenInspectorPreview.66F56946" = "0"
+	"currentGroup.66F56946" = "scene"
 }
 providers = {
 	asset = {
@@ -68,7 +71,7 @@ showSavedSearchPanel = false
 hideTabs = false
 expandedQueries = [
 ]
-queryBuilder = true
+queryBuilder = false
 ignoredProperties = "id;name;classname;imagecontentshash"
 helperWidgetCurrentArea = "all"
 disabledIndexers = ""

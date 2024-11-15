@@ -175,33 +175,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16754}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 17486}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 18296}
+      Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 18646}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 18904}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 19928}
+      Script: {instanceID: 4818}
     - Class: 114
-      Script: {instanceID: 20250}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 21168}
+      Script: {instanceID: 6058}
     - Class: 114
-      Script: {instanceID: 21874}
+      Script: {instanceID: 6764}
     - Class: 114
-      Script: {instanceID: 22090}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 22496}
+      Script: {instanceID: 7386}
     - Class: 114
-      Script: {instanceID: 22888}
+      Script: {instanceID: 7778}
     - Class: 114
-      Script: {instanceID: 24406}
+      Script: {instanceID: 9296}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,43 +248,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16658}
+      Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 16754}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 18296}
+      Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 18646}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 19268}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 19302}
+      Script: {instanceID: 4192}
     - Class: 114
-      Script: {instanceID: 19616}
+      Script: {instanceID: 4506}
     - Class: 114
-      Script: {instanceID: 19718}
+      Script: {instanceID: 4608}
     - Class: 114
-      Script: {instanceID: 19854}
+      Script: {instanceID: 4744}
     - Class: 114
-      Script: {instanceID: 21076}
+      Script: {instanceID: 5966}
     - Class: 114
-      Script: {instanceID: 21168}
+      Script: {instanceID: 6058}
     - Class: 114
-      Script: {instanceID: 21874}
+      Script: {instanceID: 6764}
     - Class: 114
-      Script: {instanceID: 22090}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 22496}
+      Script: {instanceID: 7386}
     - Class: 114
-      Script: {instanceID: 23198}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 23268}
+      Script: {instanceID: 8158}
     - Class: 114
-      Script: {instanceID: 23758}
+      Script: {instanceID: 8648}
     - Class: 114
-      Script: {instanceID: 24120}
+      Script: {instanceID: 9010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1252,7 +1252,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 4e954a0fc27cff9bedb7cc734df55ced
+      Hash: 7653484b67eaa582587cb15062ffff5e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerScript
@@ -1398,4 +1398,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/infiniteRunnerScene.unity
-  playerPath: D:/Download-Removeable/Roadside_Game/Roadside Reverie.exe
+  playerPath: C:/Users/daddy/Documents/Roadside Reverie/Builds/test/Roadside Reverie.exe

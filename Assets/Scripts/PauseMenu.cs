@@ -8,8 +8,10 @@ public class PauseMenu : MonoBehaviour
 {
 
     public bool GameIsPause = false;
+    public bool GameIsOver = false;
 
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject GameoverMenu;
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        
+
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPause)
@@ -41,13 +43,19 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         GameIsPause = true;
-
     }
 
-    public void LoadMenu()
+    public void GameOver()
     {
-        //settings menu
-        Debug.Log("Loading Menu...");
+        Time.timeScale = 0;
+        GameIsOver = true;
+        GameoverMenu.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 
     public void Quit()

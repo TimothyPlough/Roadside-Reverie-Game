@@ -7,16 +7,16 @@ using UnityEngine.XR;
 
 public class PlayerScript : MonoBehaviour
 {
-    [SerializeField] BoxCollider2D playerCollider;
+    [SerializeField] CapsuleCollider2D playerCollider;
     [SerializeField] Rigidbody2D player;
     [SerializeField] float acceleration;
     [SerializeField] float maxSpeed;
+    [SerializeField] float minSpeed;
 
     //smaller value means stop faster
     [Range(0f,1f)]
     [SerializeField] float drag;
 
-    [SerializeField] BoxCollider2D platformCheck;
     public float jump_speed;
     public float playerDownY = 0.1f;
     public bool can_jump;
@@ -60,7 +60,7 @@ public class PlayerScript : MonoBehaviour
     private void GetInput()
     {
         if(!isStun)
-            xInput = Input.GetAxis("Horizontal");
+            xInput = Input.GetAxis("Horizontal"); // values [-1, 1]
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -84,29 +84,30 @@ public class PlayerScript : MonoBehaviour
     {
 
         float increment = xInput * acceleration;
-        float newSpeed = Mathf.Clamp(player.velocity.x + increment, -maxSpeed, maxSpeed);
+        float newSpeed = Mathf.Clamp(player.velocity.x + increment, -maxSpeed, -minSpeed);
 
         player.velocity = new Vector2(newSpeed,player.velocity.y);
 
+
+        /*
         //change sprite direction
         if (Mathf.Abs(xInput) > 0)
         {
             float direction = Mathf.Sign(xInput) * -1;
             transform.localScale = new Vector3(direction, 1, 1);
         }
+        */
 
         //only slowed down when on solid ground and no inputs
-        if (can_jump && xInput == 0)
-            if (Input.GetKey(KeyCode.DownArrow))
-            {
-                player.position = new Vector2(player.position.x, player.position.y - playerDownY);
-                can_jump = false;
-            }
-            else
-            {
-                player.velocity *= drag;
-            }
-            
+        if (can_jump && xInput == 0 || can_jump && xInput > 0)
+            player.velocity *= drag;
+        /*
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            player.position = new Vector2(player.position.x, player.position.y - playerDownY);
+            can_jump = false;
+        }
+        */
     }
 
     private void Stun()
@@ -135,7 +136,7 @@ public class PlayerScript : MonoBehaviour
     {
 
         //if moving and on solid groud
-        if (xInput != 0) 
+        if (xInput < 0)
             anim.SetBool("PlayerRun", true);
         else  
             anim.SetBool("PlayerRun", false);
