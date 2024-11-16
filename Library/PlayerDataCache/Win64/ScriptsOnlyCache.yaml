@@ -8,11 +8,13 @@ ScriptsOnlyBuild:
     - MainMenuScript
     - PauseMenu
     - PlayerScript
+    - ScoreCheck
     - SettingsSlider
     - TestScript
     - carWindowScript
     - changeBackground
     - destoryPlatform
+    - fpsSetter
     - levelGen
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -134,6 +136,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Restart
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -175,33 +180,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 16696}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 16758}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 17490}
     - Class: 114
-      Script: {instanceID: 3186}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 18300}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 18650}
     - Class: 114
-      Script: {instanceID: 4818}
+      Script: {instanceID: 18908}
     - Class: 114
-      Script: {instanceID: 5140}
+      Script: {instanceID: 19934}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 20256}
     - Class: 114
-      Script: {instanceID: 6764}
+      Script: {instanceID: 21176}
     - Class: 114
-      Script: {instanceID: 6980}
+      Script: {instanceID: 22096}
     - Class: 114
-      Script: {instanceID: 7386}
+      Script: {instanceID: 22502}
     - Class: 114
-      Script: {instanceID: 7778}
+      Script: {instanceID: 22894}
     - Class: 114
-      Script: {instanceID: 9296}
+      Script: {instanceID: 24414}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,43 +253,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1548}
+      Script: {instanceID: 16696}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 16758}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 3186}
+      Script: {instanceID: 18300}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 18650}
     - Class: 114
-      Script: {instanceID: 4158}
+      Script: {instanceID: 19172}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 19274}
     - Class: 114
-      Script: {instanceID: 4506}
+      Script: {instanceID: 19308}
     - Class: 114
-      Script: {instanceID: 4608}
+      Script: {instanceID: 19622}
     - Class: 114
-      Script: {instanceID: 4744}
+      Script: {instanceID: 19724}
     - Class: 114
-      Script: {instanceID: 5966}
+      Script: {instanceID: 19860}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 20684}
     - Class: 114
-      Script: {instanceID: 6764}
+      Script: {instanceID: 21084}
     - Class: 114
-      Script: {instanceID: 6980}
+      Script: {instanceID: 21176}
     - Class: 114
-      Script: {instanceID: 7386}
+      Script: {instanceID: 22096}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 22502}
     - Class: 114
-      Script: {instanceID: 8158}
+      Script: {instanceID: 23204}
     - Class: 114
-      Script: {instanceID: 8648}
+      Script: {instanceID: 23274}
     - Class: 114
-      Script: {instanceID: 9010}
+      Script: {instanceID: 23408}
+    - Class: 114
+      Script: {instanceID: 23766}
+    - Class: 114
+      Script: {instanceID: 24128}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -310,10 +319,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 35e5973ac63bec2e1cef8a58a62d8c03
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: changeBackground
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -658,6 +667,12 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 1bec8920397d50a6c543ff17e72d6008
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: fpsSetter
+  - hash:
+      serializedVersion: 2
       Hash: 960935b102b3064f4b924de16426e340
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -712,7 +727,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: dc17e39d5befc54e847b9508fab4f8a1
+      Hash: 50dea6d7bb3a43cdbac8aed83aca4893
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseMenu
@@ -842,6 +857,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime
     namespaceName: UnityEngine.U2D.Animation
     className: BufferManager
+  - hash:
+      serializedVersion: 2
+      Hash: aa2bf1473ff0bf7390b3b7ce758b5a4e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScoreCheck
   - hash:
       serializedVersion: 2
       Hash: 0b63f6d3335e11939ce8790b904c8691
@@ -998,12 +1019,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 540882762544409cc4530e60db00e951
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1180,7 +1195,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: dc6cd00b23188fd4c7079d1d08142800
+      Hash: 3070ec279c38c9d157d77cd4a9ed01f4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DeathScript
@@ -1214,6 +1229,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 35e5973ac63bec2e1cef8a58a62d8c03
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: changeBackground
   - hash:
       serializedVersion: 2
       Hash: a89b0448af4e1cd103a77f9fec0a961f
@@ -1398,4 +1419,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/infiniteRunnerScene.unity
-  playerPath: C:/Users/daddy/Documents/Roadside Reverie/Builds/test/Roadside Reverie.exe
+  playerPath: D:/Download-Removeable/491 games/RoadsideReverie_v0.2/Roadside Reverie.exe

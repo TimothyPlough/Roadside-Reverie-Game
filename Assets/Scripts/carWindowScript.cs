@@ -24,7 +24,7 @@ public class carWindowScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(cam.transform.position.x + initOffset, cam.transform.position.y, cam.GetComponent<CamMove>().zPos);
+        transform.position = new Vector3(cam.transform.position.x + initOffset, transform.position.y, cam.GetComponent<CamMove>().zPos);
         timer = Random.Range(timeMin, timeMax);
         if(initOffset > 0)
         {
