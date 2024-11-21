@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|c:\\users\\daddy\\documents\\github\\roadside-reverie-game\\assets\\scorecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scorecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|c:\\users\\daddy\\documents\\github\\roadside-reverie-game\\assets\\scripts\\scorecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scorecheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|c:\\users\\daddy\\documents\\github\\roadside-reverie-game\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|c:\\users\\daddy\\documents\\github\\roadside-reverie-game\\assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\carwindowscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carwindowscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\cammove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|c:\\users\\daddy\\documents\\github\\roadside-reverie-game\\assets\\scripts\\cammove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cammove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\deathscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deathscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\levelselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\levelgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birdscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\assets\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543354FF-30D0-0E68-0391-8CBC2CDD938C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,118 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ScoreCheck.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\ScoreCheck.cs",
-              "RelativeDocumentMoniker": "Assets\\ScoreCheck.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\ScoreCheck.cs",
-              "RelativeToolTip": "Assets\\ScoreCheck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "DocumentIndex": 1,
+              "Title": "CheckpointScript.cs",
+              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\CheckpointScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CheckpointScript.cs",
+              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\CheckpointScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CheckpointScript.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwC4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:08:36.176Z",
+              "WhenOpened": "2024-11-21T21:16:06.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ScoreCheck.cs",
+              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\ScoreCheck.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreCheck.cs",
+              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\ScoreCheck.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoreCheck.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwB8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T21:16:13.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "carWindowScript.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\carWindowScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\carWindowScript.cs",
               "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\carWindowScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\carWindowScript.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAYwCsAAAAmAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAYwCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T01:48:41.061Z"
+              "WhenOpened": "2024-11-15T01:48:41.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeathScript.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\DeathScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DeathScript.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\DeathScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DeathScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T01:20:08.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LevelSelect.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\LevelSelect.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelSelect.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\LevelSelect.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LevelSelect.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:51:21.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "levelGen.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\levelGen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\levelGen.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\levelGen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\levelGen.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwAcAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T21:50:37.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScript.cs",
               "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\PlayerScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerScript.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwC8AAAAUAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAqwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T21:02:39.287Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BirdScript.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\BirdScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BirdScript.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\BirdScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BirdScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T01:17:10.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PauseMenu.cs",
-              "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
-              "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T00:50:13.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "camMove.cs",
               "DocumentMoniker": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\camMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\camMove.cs",
               "ToolTip": "C:\\Users\\daddy\\Documents\\GitHub\\Roadside-Reverie-Game\\Assets\\Scripts\\camMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\camMove.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCQAAABbAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAYwDQAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T00:44:24.195Z"
+              "WhenOpened": "2024-11-11T00:44:24.195Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -34,14 +34,14 @@ public class CamMove : MonoBehaviour
             float playPos = player.transform.position.y; //makes camera match player y
 
             Vector3 endPos = new Vector3(camEnd.transform.position.x, camEnd.transform.position.y);
-            Vector3 playPosY = new Vector3(transform.position.x, playPos + offset, zPos);
+            //Vector3 playPosY = new Vector3(transform.position.x, playPos + offset, zPos);
 
             if (reverse)
             {
                 if (endPos.x < transform.position.x) //change x pos of camera to right
                 {
                     transform.position = new Vector3(transform.position.x + camSpeed, transform.position.y, zPos);
-                    transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    //transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
                     transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, this.transform.position.y, zPos), camSpeedY * Time.deltaTime);
                 }
             }
@@ -49,8 +49,13 @@ public class CamMove : MonoBehaviour
             {
                 if(endPos.x < transform.position.x) //change x pos of camera to left
                 {
-                    transform.position = new Vector3(transform.position.x - camSpeed, transform.position.y, zPos);
-                    transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
+                    //if the player is moving at max speed the camera will follow
+                    if (player.GetComponent<Rigidbody2D>().velocity.x == player.GetComponent<PlayerScript>().maxSpeed * -1)
+                        transform.position = new Vector3(player.transform.position.x, transform.position.y, zPos);
+                    //otherwise the camera will move at the designated speed
+                    else
+                        transform.position = new Vector3(transform.position.x - camSpeed, transform.position.y, zPos);
+                    //transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
                     transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, this.transform.position.y, zPos), camSpeedY * Time.deltaTime);
                 }
             }

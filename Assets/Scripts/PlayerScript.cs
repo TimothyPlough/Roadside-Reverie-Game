@@ -9,9 +9,9 @@ public class PlayerScript : MonoBehaviour
 {
     [SerializeField] CapsuleCollider2D playerCollider;
     [SerializeField] Rigidbody2D player;
-    [SerializeField] float acceleration;
-    [SerializeField] float maxSpeed;
-    [SerializeField] float minSpeed;
+    [SerializeField] public float acceleration;
+    [SerializeField] public float maxSpeed;
+    [SerializeField] public float minSpeed;
 
     //smaller value means stop faster
     [Range(0f,1f)]

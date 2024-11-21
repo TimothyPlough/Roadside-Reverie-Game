@@ -6,6 +6,9 @@ using UnityEngine;
 public class ScoreCheck : MonoBehaviour
 {
     private float SurvivalScore;
+    public float speedScore;
+
+    private float Totalscore;
 
     [SerializeField]
     private TMP_Text ScoreDisplay;
@@ -22,15 +25,21 @@ public class ScoreCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TotalScore.SetText($"TOTAL SCORE: {SurvivalScore}" );
+        Totalscore = SurvivalScore + speedScore;
+
+        //displayed on game over
+        TotalScore.SetText("TOTAL SCORE: " + Totalscore.ToString("F0")
+            +"\n Survival Score: " + SurvivalScore.ToString("F0") +
+            "\n Speed Bonus: " + speedScore.ToString("F0"));
 
         //ScoreDisplay.SetText($"SCORE: {SurvivalScore}");
 
-        ScoreDisplay.SetText("SCORE: " + SurvivalScore.ToString("F0"));
+        //displayed during gameplay
+        ScoreDisplay.SetText("SCORE: " + Totalscore.ToString("F0"));
     }
 
     private void FixedUpdate()
     {
-        SurvivalScore = Time.time;
+        SurvivalScore = Time.timeSinceLevelLoad;
     }
 }
