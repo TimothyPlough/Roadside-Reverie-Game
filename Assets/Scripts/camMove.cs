@@ -39,14 +39,14 @@ public class CamMove : MonoBehaviour
             Vector3 endPos = new Vector3(camEnd.transform.position.x, camEnd.transform.position.y);
             Vector3 playPosY = new Vector3(transform.position.x, playPos + offset, zPos);
 
-            double posYMax = posYGameObject.transform.position.y;
-            double negYMax = negYGameObject.transform.position.y;
+            float posYMax = posYGameObject.transform.position.y;
+            float negYMax = negYGameObject.transform.position.y;
 
             if (reverse)
             {
                 if (endPos.x < transform.position.x) //change x pos of camera to right
                 {
-                    transform.position = new Vector3(transform.position.x + camSpeed, transform.position.y, zPos);
+                    transform.position = new Vector3(transform.position.x + (camSpeed*Time.deltaTime), transform.position.y, zPos);
                     if (posYMax < transform.position.y)
                     {
                         if (negYMax < transform.position.y)
@@ -61,7 +61,7 @@ public class CamMove : MonoBehaviour
             {
                 if(endPos.x < transform.position.x) //change x pos of camera to left
                 {
-                    transform.position = new Vector3(transform.position.x - camSpeed, transform.position.y, zPos);
+                    transform.position = new Vector3(transform.position.x - (camSpeed * Time.deltaTime), transform.position.y, zPos);
                     if (posYMax > transform.position.y)
                     {
                         if (negYMax < transform.position.y)
@@ -69,6 +69,14 @@ public class CamMove : MonoBehaviour
                             transform.position = Vector3.Slerp(transform.position, playPosY, camSpeedY * Time.deltaTime);
                             transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, this.transform.position.y, zPos), camSpeedY * Time.deltaTime);
                         }
+                        else
+                        {
+                            transform.position = new Vector3(transform.position.x, negYMax + 0.001f, transform.position.z);
+                        }
+                    }
+                    else
+                    {
+                        transform.position = new Vector3(transform.position.x, posYMax - 0.001f, transform.position.z);
                     }
                 }
             }
