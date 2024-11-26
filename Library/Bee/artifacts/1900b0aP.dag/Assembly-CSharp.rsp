@@ -324,6 +324,7 @@
 "Assets/Scripts/CarScript.cs"
 "Assets/Scripts/carWindowScript.cs"
 "Assets/Scripts/changeBackground.cs"
+"Assets/Scripts/CheckpointScript.cs"
 "Assets/Scripts/DeathScript.cs"
 "Assets/Scripts/destoryPlatform.cs"
 "Assets/Scripts/fpsSetter.cs"

@@ -3,10 +3,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AudioManager
     - CamMove
+    - CheckpointScript
     - DeathScript
     - LevelSelct
     - MainMenuScript
     - PauseMenu
+    - PlatformCloud
     - PlayerScript
     - ScoreCheck
     - SettingsSlider
@@ -19,7 +21,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -56,10 +57,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -138,6 +137,9 @@ ScriptsOnlyBuild:
     methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: Quit
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: Restart
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
@@ -206,7 +208,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22894}
     - Class: 114
-      Script: {instanceID: 24414}
+      Script: {instanceID: 24416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,6 +247,8 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -285,15 +289,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22502}
     - Class: 114
-      Script: {instanceID: 23204}
+      Script: {instanceID: 22920}
     - Class: 114
-      Script: {instanceID: 23274}
+      Script: {instanceID: 23206}
     - Class: 114
-      Script: {instanceID: 23408}
+      Script: {instanceID: 23276}
     - Class: 114
-      Script: {instanceID: 23766}
+      Script: {instanceID: 23410}
     - Class: 114
-      Script: {instanceID: 24128}
+      Script: {instanceID: 23768}
+    - Class: 114
+      Script: {instanceID: 24130}
+    - Class: 114
+      Script: {instanceID: 24150}
+    - Class: 114
+      Script: {instanceID: 24416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -745,7 +755,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 154d7b4d2c655422d22c56c8fc3e9507
+      Hash: 6ca63160160de5e4e4797c72003eaa22
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CamMove
@@ -859,7 +869,7 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
-      Hash: aa2bf1473ff0bf7390b3b7ce758b5a4e
+      Hash: cba3477632b892e1b2271a92ba8e8d86
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ScoreCheck
@@ -1115,6 +1125,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d1ddc0061c63be63d9a05f55c441ab3b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CheckpointScript
   - hash:
       serializedVersion: 2
       Hash: 20a120e55ad3ab65556328d5fd8309dd
@@ -1419,4 +1435,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/infiniteRunnerScene.unity
-  playerPath: D:/Download-Removeable/491 games/RoadsideReverie_v0.2/Roadside Reverie.exe
+  playerPath: D:/Download-Removeable/491 games/RoadsideReverie_FinalDemo/Roadside
+    Reverie.exe
